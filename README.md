@@ -14,9 +14,11 @@ npm install eth-local-wallet
 Dapps need wallets to interface with the UI. However, not every client has access to the Metamask browser extension, nor do many know how to set one up. This module uses ethereumjs-wallet to setup up a local wallet that could be used inside the browser and can also be safely stored inside localStorage.
 
 ``` node
+const Wallet = require('eth-local-wallet');
+
 (async() => {
     // 0. initiates new wallet
-    const localWallet = new LocalWallet();
+    const localWallet = new Wallet();
 
     // 1. safely export wallet with password encryption
     let password = '12345678';
@@ -36,13 +38,13 @@ Dapps need wallets to interface with the UI. However, not every client has acces
 ## methods
 
 
-##### localWallet`.importWallet(secureWallet<wallet/string>, password<string>)`;
+##### `localWallet`.importWallet(secureWallet<wallet/string>, password<string>);
 Extracts and mounts imported wallet params to `localWallet`
 
-##### localWallet`.exportWallet(password)`;
+##### `localWallet`.exportWallet(password);
 Returns encrypted wallet
 
-##### localWallet.`generate()`;
+##### `localWallet`.generate();
 Returns new wallet
 
 # license
