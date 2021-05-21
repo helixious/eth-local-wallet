@@ -1,0 +1,26 @@
+{
+  "name": "eth-local-wallet",
+  "version": "1.0.0",
+  "description": "A lightweight ethereumjs-wallet implementation that makes creating a local Ethereum wallet easy and safe!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helixious/eth-local-wallet.git"
+  },
+  "keywords": [
+    "ethereum",
+    "wallet"
+  ],
+  "author": "sle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helixious/eth-local-wallet/issues"
+  },
+  "homepage": "https://github.com/helixious/eth-local-wallet#readme",
+  "dependencies": {
+    "ethereumjs-wallet": "^1.0.1"
+  }
+}
